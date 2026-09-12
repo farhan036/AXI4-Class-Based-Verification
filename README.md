@@ -25,9 +25,6 @@ functional coverage, assertions, and scoreboard-based checking.
 -   [Project Structure](#project-structure)
 -   [Simulation Results](#simulation-results)
 -   [Tools and Technologies](#tools-and-technologies)
--   [Learning Objectives](#learning-objectives)
--   [Future Improvements](#future-improvements)
--   [Related Project](#related-project)
 -   [Authors](#authors)
 
 ------------------------------------------------------------------------
