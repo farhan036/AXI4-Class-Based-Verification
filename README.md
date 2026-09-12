@@ -350,30 +350,38 @@ AXI4-Class-Based-Verification/
 │   └── axi4_slave.sv
 │
 ├── tb/
-│   ├── axi_pkg.sv
-│   ├── AXI_intrf.sv
-│   ├── AXI_transaction.sv
-│   ├── AXI_generator.sv
+│   ├── Memory Classbased/
+│   │   ├── mem_tb.sv
+│   │   ├── mem_driver_pkg.sv
+│   │   ├── mem_env_pkg.sv
+│   │   ├── mem_gen_pkg.sv
+│   │   ├── mem_monitor_pkg.sv
+│   │   ├── mem_scoreboard_pkg.sv
+│   │   └── mem_transaction_pkg.sv
+│   │
 │   ├── AXI_driver.sv
-│   ├── AXI_monitor.sv
-│   ├── AXI_scoreboard.sv
 │   ├── AXI_env.sv
+│   ├── AXI_generator.sv
+│   ├── AXI_intrf.sv
+│   ├── AXI_monitor.sv
+│   ├── AXI_pkg.sv
+│   ├── AXI_properties_pkg.sv
+│   ├── AXI_scoreboard.sv
 │   ├── AXI_tb.sv
-│   └── AXI_properties.sv
+│   └── AXI_transaction.sv
 │
-├── memory_verification/
-│   ├── mem_intrf.sv
-│   ├── mem_transaction_pkg.sv
-│   ├── mem_driver_pkg.sv
-│   ├── mem_gen_pkg.sv
-│   ├── mem_monitor_pkg.sv
-│   ├── mem_scoreboard_pkg.sv
-│   ├── mem_env_pkg.sv
-│   └── MEM_tb.sv
+├── coverage/
+│   └── Reports/
 │
+├── do_file/
+│   ├── dut_files.txt
+│   ├── files.txt
+│   ├── run.do
+│   ├── tb_files.txt
+│   └── wave.do
 │
 ├── docs/
-│   └── Project_Report.pdf
+│   └── Mostafa_Mohamed_Farhan_&&_Mahmoud_Ismail.pdf
 │
 └── README.md
 ```
