@@ -399,19 +399,6 @@ boundary conditions.
 
 The scoreboard continuously checked DUT behavior throughout simulation.
 
-### Expected Result
-
-``` text
-TOTAL TESTS : ...
-PASSED      : ...
-FAILED      : 0
-
-OVERALL STATUS: SUCCESS
-```
-
-Add actual simulation screenshots, waveform captures, and coverage
-reports to this section when available.
-
 ------------------------------------------------------------------------
 
 ## Tools and Technologies
