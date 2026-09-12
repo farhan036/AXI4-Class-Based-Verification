@@ -371,9 +371,6 @@ AXI4-Class-Based-Verification/
 │   ├── mem_env_pkg.sv
 │   └── MEM_tb.sv
 │
-├── simulation/
-│   ├── waveforms/
-│   └── logs/
 │
 ├── docs/
 │   └── Project_Report.pdf
