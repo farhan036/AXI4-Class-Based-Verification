@@ -1,0 +1,63 @@
+Coverage Report by file with details
+
+=================================================================================
+=== File: axi4.v
+=================================================================================
+Condition Coverage:
+    Enabled Coverage            Active   Covered    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FEC Condition Terms              8         8         0     100.0
+
+================================Condition Details================================
+
+Condition Coverage for file axi4.v --
+
+----------------Focused Condition View-------------------
+Line       153 Item    1  (AWVALID && AWREADY)
+Condition totals: 0 of 0 input terms covered = 100.0% (all terms are excluded)
+
+----------------Focused Condition View-------------------
+Line       173 Item    1  (WVALID && WREADY)
+Condition totals: 0 of 0 input terms covered = 100.0% (all terms are excluded)
+
+----------------Focused Condition View-------------------
+Line       175 Item    1  (write_addr_valid && ~write_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.0%
+
+----------------Focused Condition View-------------------
+Line       184 Item    1  (WLAST || (write_burst_cnt == 0))
+Condition totals: 0 of 0 input terms covered = 100.0% (all terms are excluded)
+
+----------------Focused Condition View-------------------
+Line       189 Item    1  (~write_addr_valid || write_boundary_cross)
+Condition totals: 0 of 0 input terms covered = 100.0% (all terms are excluded)
+
+----------------Focused Condition View-------------------
+Line       204 Item    1  (BREADY && BVALID)
+Condition totals: 0 of 0 input terms covered = 100.0% (all terms are excluded)
+
+----------------Focused Condition View-------------------
+Line       224 Item    1  (ARVALID && ARREADY)
+Condition totals: 0 of 0 input terms covered = 100.0% (all terms are excluded)
+
+----------------Focused Condition View-------------------
+Line       239 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.0%
+
+----------------Focused Condition View-------------------
+Line       251 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.0%
+
+----------------Focused Condition View-------------------
+Line       264 Item    1  (RREADY && RVALID)
+Condition totals: 0 of 0 input terms covered = 100.0% (all terms are excluded)
+
+----------------Focused Condition View-------------------
+Line       274 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.0%
+
+
+
+
+Total Coverage By File (code coverage only, filtered view): 100.0%
+

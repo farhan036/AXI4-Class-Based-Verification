@@ -1,0 +1,113 @@
+COVERGROUP COVERAGE:
+-----------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                              
+-----------------------------------------------------------------------------------------------
+ TYPE /axi_transaction_pkg/axi_transaction/cg          100.0%        100    Covered              
+    covered/total bins:                                    57         57                      
+    missing/total bins:                                     0         57                      
+    % Hit:                                             100.0%        100                      
+    Coverpoint cg::cp_awaddr                           100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin low_addr                                       85          1    Covered              
+        bin mid_addr                                      227          1    Covered              
+        bin high_addr                                     333          1    Covered              
+    Coverpoint cg::cp_awlen                            100.0%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                         100.0%        100                      
+        bin len_single                                    650          1    Covered              
+        bin len_short                                       8          1    Covered              
+        bin len_med                                        61          1    Covered              
+        bin len_max                                        81          1    Covered              
+    Coverpoint cg::cp_araddr                           100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin low_addr                                       85          1    Covered              
+        bin mid_addr                                      227          1    Covered              
+        bin high_addr                                     333          1    Covered              
+    Coverpoint cg::cp_arlen                            100.0%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                         100.0%        100                      
+        bin len_single                                    650          1    Covered              
+        bin len_short                                       8          1    Covered              
+        bin len_med                                        61          1    Covered              
+        bin len_max                                        81          1    Covered              
+    Coverpoint cg::cp_awvalid                          100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                       515          1    Covered              
+        bin auto[1]                                       285          1    Covered              
+    Coverpoint cg::cp_arvalid                          100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin auto[0]                                       243          1    Covered              
+        bin auto[1]                                       557          1    Covered              
+    Coverpoint cg::cp_op                               100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin auto[WRITE]                                   285          1    Covered              
+        bin auto[READ]                                    272          1    Covered              
+        bin auto[IDLE]                                    243          1    Covered              
+    Coverpoint cg::cp_address_mode                     100.0%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                         100.0%        100                      
+        bin mode_0                                        244          1    Covered              
+        bin mode_1                                        323          1    Covered              
+        bin mode_2                                        155          1    Covered              
+    Cross cg::cp_op_mode                               100.0%        100    Covered              
+        covered/total bins:                                 9          9                      
+        missing/total bins:                                 0          9                      
+        % Hit:                                         100.0%        100                      
+        bin <auto[WRITE],mode_0>                           86          1    Covered              
+        bin <auto[READ],mode_0>                            89          1    Covered              
+        bin <auto[IDLE],mode_0>                            69          1    Covered              
+        bin <auto[WRITE],mode_1>                          123          1    Covered              
+        bin <auto[READ],mode_1>                           107          1    Covered              
+        bin <auto[IDLE],mode_1>                            93          1    Covered              
+        bin <auto[WRITE],mode_2>                           52          1    Covered              
+        bin <auto[READ],mode_2>                            53          1    Covered              
+        bin <auto[IDLE],mode_2>                            50          1    Covered              
+    Cross cg::cp_wadd_len                              100.0%        100    Covered              
+        covered/total bins:                                12         12                      
+        missing/total bins:                                 0         12                      
+        % Hit:                                         100.0%        100                      
+        bin <mid_addr,len_single>                         174          1    Covered              
+        bin <high_addr,len_single>                        281          1    Covered              
+        bin <low_addr,len_short>                            4          1    Covered              
+        bin <mid_addr,len_short>                            1          1    Covered              
+        bin <high_addr,len_short>                           3          1    Covered              
+        bin <low_addr,len_med>                             11          1    Covered              
+        bin <low_addr,len_max>                              7          1    Covered              
+        bin <mid_addr,len_med>                             24          1    Covered              
+        bin <mid_addr,len_max>                             28          1    Covered              
+        bin <high_addr,len_med>                            15          1    Covered              
+        bin <high_addr,len_max>                            34          1    Covered              
+        bin low_singlelen                                  63          1    Covered              
+    Cross cg::cp_radd_len                              100.0%        100    Covered              
+        covered/total bins:                                12         12                      
+        missing/total bins:                                 0         12                      
+        % Hit:                                         100.0%        100                      
+        bin <mid_addr,len_single>                         174          1    Covered              
+        bin <high_addr,len_single>                        281          1    Covered              
+        bin <low_addr,len_short>                            4          1    Covered              
+        bin <mid_addr,len_short>                            1          1    Covered              
+        bin <high_addr,len_short>                           3          1    Covered              
+        bin <low_addr,len_med>                             11          1    Covered              
+        bin <low_addr,len_max>                              7          1    Covered              
+        bin <mid_addr,len_med>                             24          1    Covered              
+        bin <mid_addr,len_max>                             28          1    Covered              
+        bin <high_addr,len_med>                            15          1    Covered              
+        bin <high_addr,len_max>                            34          1    Covered              
+        bin low_singlelen                                  63          1    Covered              
+ CLASS axi_transaction
+
+TOTAL COVERGROUP COVERAGE: 100.0%  COVERGROUP TYPES: 1

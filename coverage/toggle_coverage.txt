@@ -1,0 +1,47 @@
+Coverage Report by file with details
+
+=================================================================================
+=== File: axi4.v
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Toggle Bins                    612       612         0     100.0
+
+================================Toggle Details================================
+
+Toggle Coverage for File axi4.v --
+
+       Line                                   Node      1H->0L      0L->1H  "Coverage"
+--------------------------------------------------------------------------------------
+
+Total Node Count     =        306 
+Toggled Node Count   =        306 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =      100.0% (612 of 612 bins)
+
+=================================================================================
+=== File: axi_memory.v
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Toggle Bins                    156       156         0     100.0
+
+================================Toggle Details================================
+
+Toggle Coverage for File axi_memory.v --
+
+       Line                                   Node      1H->0L      0L->1H  "Coverage"
+--------------------------------------------------------------------------------------
+
+Total Node Count     =         78 
+Toggled Node Count   =         78 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =      100.0% (156 of 156 bins)
+
+
+Total Coverage By File (code coverage only, filtered view): 100.0%
+

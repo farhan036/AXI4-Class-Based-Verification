@@ -1,0 +1,142 @@
+Coverage Report by file with details
+
+=================================================================================
+=== File: axi4.v
+=================================================================================
+Branch Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Branches                        32        32         0     100.0
+
+================================Branch Details================================
+
+Branch Coverage for file axi4.v --
+
+------------------------------------IF Branch------------------------------------
+    104                                    29438     Count coming in to IF
+    104             1                         70             if (!ARESETn) begin
+    139             1                      29368             end else begin
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------CASE Branch------------------------------------
+    147                                    29368     Count coming in to CASE
+    148             1                      16394                     W_IDLE: begin
+    166             1                        272                     W_ADDR: begin
+    172             1                      12430                     W_DATA: begin
+    203             1                        272                     W_RESP: begin
+    212             1                          E                     default: write_state <= W_IDLE;
+Branch totals: 4 hits of 4 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    153                                    16394     Count coming in to IF
+    153             1                        272                         if (AWVALID && AWREADY) begin
+                                           16122     All False Count
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    173                                    12430     Count coming in to IF
+    173             1                       6351                         if (WVALID && WREADY) begin
+                                            6079     All False Count
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    175                                     6351     Count coming in to IF
+    175             1                       4055                             if (write_addr_valid && !write_boundary_cross) begin
+                                            2296     All False Count
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    184                                     6351     Count coming in to IF
+    184             1                        272                             if (WLAST || write_burst_cnt == 0) begin
+    195             1                       6079                             end else begin
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    189                                      272     Count coming in to IF
+    189             1                         57                                 if (!write_addr_valid || write_boundary_cross) begin
+    191             1                        215                                 end else begin
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    204                                      272     Count coming in to IF
+    204             1                      E-hit                         if (BREADY && BVALID) begin
+                                               E     All False Count
+Branch totals: 0 hits of 0 branches = 100.0%
+
+------------------------------------CASE Branch------------------------------------
+    218                                    29368     Count coming in to CASE
+    219             1                      14518                     R_IDLE: begin
+    237             1                        257                     R_ADDR: begin
+    245             1                        257                     R_WAIT: begin             
+    249             1                      14336                     R_DATA: begin
+    288             1                          E                     default: read_state <= R_IDLE;
+Branch totals: 4 hits of 4 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    224                                    14518     Count coming in to IF
+    224             1                        257                         if (ARVALID && ARREADY) begin
+                                           14261     All False Count
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    239                                      257     Count coming in to IF
+    239             1                        193                         if (read_addr_valid && !read_boundary_cross) begin
+                                              64     All False Count
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    251                                    14336     Count coming in to IF
+    251             1                       8284                         if (read_addr_valid && !read_boundary_cross) begin
+    256             1                       6052                         end else begin
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    264                                    14336     Count coming in to IF
+    264             1                       7168                         if (RREADY && RVALID) begin
+                                            7168     All False Count
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    268                                     7168     Count coming in to IF
+    268             1                       6911                             if (read_burst_cnt > 0) begin
+    280             1                        257                             end else begin
+Branch totals: 2 hits of 2 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    274                                     6911     Count coming in to IF
+    274             1                       3949                                 if (read_addr_valid && !read_boundary_cross) begin
+                                            2962     All False Count
+Branch totals: 2 hits of 2 branches = 100.0%
+
+
+
+=================================================================================
+=== File: axi_memory.v
+=================================================================================
+Branch Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Branches                         5         5         0     100.0
+
+================================Branch Details================================
+
+Branch Coverage for file axi_memory.v --
+
+------------------------------------IF Branch------------------------------------
+    24                                     16006     Count coming in to IF
+    24              1                         32             if (!rst_n)  // Fix
+    26              1                      11512             else if (mem_en) begin
+                                            4462     All False Count
+Branch totals: 3 hits of 3 branches = 100.0%
+
+------------------------------------IF Branch------------------------------------
+    27                                     11512     Count coming in to IF
+    27              1                       4055                 if (mem_we)
+    29              1                       7457                  else 
+Branch totals: 2 hits of 2 branches = 100.0%
+
+
+
+
+Total Coverage By File (code coverage only, filtered view): 100.0%
+

@@ -1,0 +1,22 @@
+
+ASSERTION RESULTS:
+-------------------------------------------------------
+Name                 File(Line)           Failure Pass 
+                                          Count   Count 
+-------------------------------------------------------
+/AXI_tb/intrf/Assertion_bvalid_after_last
+                     AXI_intrf.sv(58)           0   272
+/AXI_tb/intrf/Assertion_rready_after_last
+                     AXI_intrf.sv(62)           0   243
+/AXI_tb/intrf/Assertion_awready_after_awvalid
+                     AXI_intrf.sv(66)           0   272
+/AXI_tb/intrf/Assertion_WLAST_AND_RLAST
+                     AXI_intrf.sv(70)           0 29878
+/AXI_tb/intrf/Assertion_WLAST_AND_AWREADY
+                     AXI_intrf.sv(74)           0 29878
+/AXI_tb/intrf/Assertion_RLAST_AND_ARREADY
+                     AXI_intrf.sv(78)           0 29878
+/AXI_tb/intrf/Assertion_WLAST_AND_AWVALID
+                     AXI_intrf.sv(82)           0 29878
+/AXI_tb/intrf/Assertion_RLAST_AND_ARVALID
+                     AXI_intrf.sv(86)           0 29878

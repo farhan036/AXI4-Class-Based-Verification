@@ -1,0 +1,86 @@
+Coverage Report by file with details
+
+=================================================================================
+=== File: axi4.v
+=================================================================================
+FSM Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    FSMs                                                       100.0
+        States                       8         8         0     100.0
+        Transitions                  8         8         0     100.0
+
+================================FSM Details================================
+
+FSM Coverage for file axi4.v --
+
+FSM_ID: write_state
+    Current State Object : write_state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 148              W_IDLE                   0
+ 166              W_ADDR                   1
+ 172              W_DATA                   2
+ 203              W_RESP                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  W_IDLE                 342
+                  W_ADDR                 272
+                  W_DATA                 272
+                  W_RESP                 272
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 162                   0                 272          W_IDLE -> W_ADDR    
+ 169                   1                 272          W_ADDR -> W_DATA    
+ 186                   3                 272          W_DATA -> W_RESP    
+ 207                   5                 272          W_RESP -> W_IDLE    
+
+
+    Summary                     Active      Hits    Misses % Covered
+    -------                     ------      ----    ------ ---------
+        States                       4         4         0     100.0
+        Transitions                  4         4         0     100.0
+FSM_ID: read_state
+    Current State Object : read_state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 219              R_IDLE                   0
+ 237              R_ADDR                   1
+ 245              R_WAIT                   2
+ 249              R_DATA                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  R_IDLE                 327
+                  R_ADDR                 257
+                  R_WAIT                 257
+                  R_DATA                 257
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 233                   0                 257          R_IDLE -> R_ADDR    
+ 243                   1                 257          R_ADDR -> R_WAIT    
+ 246                   3                 257          R_WAIT -> R_DATA    
+ 283                   5                 257          R_DATA -> R_IDLE    
+
+
+    Summary                     Active      Hits    Misses % Covered
+    -------                     ------      ----    ------ ---------
+        States                       4         4         0     100.0
+        Transitions                  4         4         0     100.0
+
+
+Total Coverage By File (code coverage only, filtered view): 100.0%
+
